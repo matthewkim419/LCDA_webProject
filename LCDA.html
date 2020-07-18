@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+    <script src="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_photo.css">
+    <style>
+    .carousel-inner > .carousel-item > img{
+        /*width: 640px;
+        height: 720px;*/
+    }
+    </style>
+
+</head>
+<body>
+    <div  id ="navbar">
+        <a href="#page 1" id="logo"><img  src="logo.png" style = "width : 6%" ></a>
+        <a href="#page 2" id="menu" class="page_2" style = "padding-left: 10%">Photo</a>
+        <a href="#page 3" id="menu" class="page_3" >Song</a>
+        <a href="#page 4" id="menu" class="page_4" >Review</a>
+        <a href="#page 5" id="menu" class="page_5" >Apply</a>
+
+    </div>
+    <div id="fullpage">
+        <div class="section" data-anchor="page 2">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script>
+            $('.carousel').carousel({
+            interval: 0.2 //기본 5초
+            })
+        </script>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+            <!-- 슬라이드 쇼 -->
+                <div class="carousel-item active">
+                    <!--가로-->
+                    <img class="d-block w-100" 
+                    src="/2.jpeg"
+                    alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                    src="/1.jpeg"
+                    alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                    src="/3.jpeg"
+                    alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                    src="/4.jpeg"
+                    alt="Third slide">
+                </div>
+                <!-- / 슬라이드 쇼 끝 -->
+
+                <!-- 왼쪽 오른쪽 화살표 버튼 -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <!-- <span>Previous</span> -->
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <!-- <span>Next</span> -->
+                </a>
+                <!-- / 화살표 버튼 끝 -->
+                
+                <!-- 인디케이터 -->
+                <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li> <!--0번부터시작-->
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <!-- 인디케이터 끝 -->
+            </div>    
+        </div>
+    </div>
+        <div class="section" data-anchor="page 3">엘세데아는 성균관대학교 명륜캠퍼스 중앙 밴드 동아리로, 다양한 장르의 밴드 음악을 커버합니다. <br>
+            밴드 사운드만 있다면 발라드부터 메탈까지, 모든 장르를 포괄합니다! <br>
+            저희 엘세데아는 학기마다 정기 공연, 축제 오디션 참가, 신입생 환영공연, 그리고 때때로 교내 타 동아리나 타 대학 밴드부와의 연합 공연을 진행하고 있습니다.<br>
+            공연 준비를 위해 주 2회 3시간씩 연습을 진행하고 있기 때문에 악기 경험이 없더라도 밴드를 하고 싶은 분이라면 누구나 환영입니다. 😊<br>
+            기타나 드럼 등의 악기를 배우고 싶다, 예전부터 밴드를 해보고 싶었다, 좋아하는 노래를 직접 연주해보고 싶다고 생각했다면? 당신은 이미 엘세인!</div>
+
+
+
+        <div class="section" data-anchor="page 4" style =" height : 0px">
+            <div class = "content">
+                <h3 id = "review">활동 후기</h3>
+                    <div id = "firstpoll">
+                        <div class="first">
+                            <img id = "img" src='person.png'>
+                            <div class="name">강**</div>
+                            <div class="age">21기</div>
+                            <div class="inst">드럼</div>
+                            <div class="text">규모가 큰 동아리라고는 할 수 없지만 그만큼 알찬 동아리 생활을 할 수 있다. 인원이 많지 않은 만큼 각 맴버의 역할이 커 그만큼 들이는 시간도 많지만 공연 등 동아리 중요한 행사에 더 적극적으로 참여할 수 있다는 점이 좋다. 인원이 소수인 편이지만 그만큼 각자의 개성이 또렷해서 자주 티격태격하긴 했지만 모두 합주에 대한 애정이 강해 다같이 각자 나름대로 열심히 쏟은 노력이 합주하면서 맞춰져가는 희열이 중독성이 있어 2년이라는 활동기간이 길지만은 않았다. 또 적당히 낡은 동방의 소파가 아늑해서 학기 중 소소한 휴식을 취할 수 있는 공간이 생긴다는 점도 은근 쏠쏠한 장점이다.</div>
+                        </div>
+                        <div class = "second">
+                            <img id = "img" src='person.png'>
+                            <div class="name">서**</div>
+                            <div class="age">22기</div>
+                            <div class="inst">기타</div>
+                            <div class="text">기타를 한 번도 만져본 적 없는 상태로 입부했는데 선배가 개인 레슨을 해주셔서 정말 좋았어요, 초보자여서 입부할 때 조금 부담이 있었는데 전혀 그럴 필요가 없었어요! 그리고 초보자도 바로 합주를 할 수 있어서 의지만 있다면 실력이 많이 늘 거예요. 열심히 하고 싶은 사람에겐 정말 최고의 동아리라고 생각합니다!!</div>
+                        </div>
+                        <div class = "third">
+                            <img id = "img" src='person.png'>
+                            <div class="name">오**</div>
+                            <div class="age">20기</div>
+                            <div class="inst">베이스</div>
+                            <div class="text">소외되는 사람 없이 모두가 함께 활동할 수 있고 친해질 수 있어서 좋았어요ㅋㅋ 동아리방에서 마음껏 연습할 수 있는것도 장점입니다!! 그리고 작년에 다른 동아리들이랑 연합공연했는데 정말 재밌었어요! 엘세데아 파이팅!!
+                            </div>
+                        </div>
+                    </div>
+                    <div id = "secondpoll">
+                        <div class="first">
+                            <img id = "img" src='person.png'>
+                            <div class="name">강**</div>
+                            <div class="age">21기</div>
+                            <div class="inst">드럼</div>
+                            <div class="text">1</div>
+                        </div>
+                        <div class = "second">
+                            <img id = "img" src='person.png'>
+                            <div class="name">강**</div>
+                            <div class="age">21기</div>
+                            <div class="inst">드럼</div>
+                            <div class="text">2</div>
+                        </div>
+                        <div class = "third">
+                            <img id = "img" src='person.png'>
+                            <div class="name">강**</div>
+                            <div class="age">21기</div>
+                            <div class="inst">드럼</div>
+                            <div class="text">3</div>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <input id="onepoll" type="radio" name="select" checked="checked" style = "color: white">
+                        <input id="twopoll" type="radio" name="select">
+                    </div>
+                </div>
+
+        </div>
+
+        <class class="section" data-anchor="page 5" style = "height: 100px;">지원하기<br>
+            <a href ="apply/apply.html"><img src="/email.png" style = "width: 10%"></a>
+        </div>
+    </div>
+    
+
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                
+                sectionsColors: ['#f2f2f2', '#4BBFC3', '#7BAABE'],
+                afterRender: function() {
+                    setInterval(function() {
+                    },1500 );
+                }
+            });    
+        });
+    </script>
+    <script src = "main.js"></script>
+    <script src="1.js"></script>
+
+</body>
+</html>

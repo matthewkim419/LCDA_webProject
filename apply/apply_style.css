@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+    font-family: 'Sunflower', sans-serif !important;
+}
+
+.item img{
+
+    width: 100%;
+
+}
+
+.item{
+    z-index: 1;
+    transition: transform 1s, opacity 1s;
+}
+
+
+.apply_form{
+    z-index: 3;
+    display: block;
+    top:15%;
+    position: fixed;
+    left: 25%;
+    width:50%;
+    background-color: gray;
+    text-align: center;
+    opacity: 0.5;
+    transition: 1s;
+
+}
+#form_title{
+    font-size: 30px;
+}
+.apply_form:hover{
+    background-color: black;
+    color:white;
+    opacity: 1;
+}
+
+@media all and (max-width:600px){
+    .apply_form{
+        z-index: 3;
+        display: block;
+        top:5%;
+        position: fixed;
+        left: 25%;
+        width:50%;
+        background-color: gray;
+        text-align: center;
+        opacity: 0.5;
+        transition: 1s;
+    
+    }
+    #form_title{
+        font-size: 10px;
+    }
+    
+
+}

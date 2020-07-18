@@ -1,0 +1,12 @@
+.up-on-scroll {
+    transition: transform 1.0s, opacity 1s; /* 변화 시간을 정한다. */
+}
+body{
+    background-color: #000;
+}
+.section{
+    color: white;
+    text-align : center;
+    font-size : x-large;
+    height: 10px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="apply_style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+
+        <!--bootstrap-->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <title>Apply</title>
+
+    </head>
+
+    <body>
+        <div class="apply_form">
+            <form>
+                <div id="form_title">
+                    엘세데아 지원서
+                </div> 
+                <br>
+                <div class="form-group">
+                <label for="exampleFormControlInput1">이름</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="홍길동">
+                </div>
+                <div class="form-group">
+
+                <label for="exampleFormControlInput1">전화번호</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="01055052576">
+                </div>
+                <div class="form-group">
+                <label for="exampleFormControlSelect1">지원 세션</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>보컬</option>
+                    <option>기타</option>
+                    <option>베이스</option>
+                    <option>드럼</option>
+                    <option>키보드</option>
+                    <option>etc</option>
+                </select>
+                </div>
+                <div class="form-group">
+                <label for="exampleFormControlTextarea1">포부/운영진에게 하고 싶은 말</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="엘세데아에 뼈를 묻겠습니다!!"></textarea>
+                </div>
+                <input type="button" id="submit_button" value="엘세데아 지원하기!">
+            </form>
+        </div>
+
+        <div class="item">
+            <img src="./a.jpg">
+        </div>
+
+        <div class="item">
+            <img src="./b.jpg">
+        </div>
+
+        <div class="item">
+            <img src="./c.jpg">
+        </div>
+
+        <div class="item">
+            <img src="./d.jpg">
+        </div>
+                   
+        <script src="apply.js"></script>
+    </body>
+</html>

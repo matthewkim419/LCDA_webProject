@@ -8,6 +8,18 @@
    z-index: 999;
    background-color: #000;
 }
+
+#menu {
+    display: inline-block;
+    transition: .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  #menu:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
 @media screen and (max-width: 1000px) {
     #navbar {
         height:6%;

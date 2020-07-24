@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <title>브라우저 폭에 꽉차는 메뉴 만들기</title>
+        <meta name="Author" content="Eunsik Lyang">
+        <meta name="Description" content="브라우저 폭에 꽉 차고, 메뉴의 텍스트 길이에 따라 유동적으로 변하는 메뉴, Stretch horizontal ul to fit width of div">
+        <style>
+            *, body {margin:0;padding:0}
+            nav {
+                width: 100%;
+                display: table;
+                border-collapse: collapse;
+                table-layout:fixed;
+                border: none;
+            }
+            nav ul {
+                display: table-row;
+            }
+            nav li {
+                display: table-cell;
+                text-align:center;
+                padding: 5px 0;
+                 
+                /*아래는 메뉴 영역을 구분하기 위한 옵션입니다.*/
+                border-top:1px solid #69c;
+                border-bottom:1px solid #69c;
+            }
+            /*아래는 메뉴 영역을 구분하기 위한 옵션입니다.*/
+            .nav-list+.nav-list{border-left:1px solid #69c}
+ 
+            .nav-list:hover,
+            .nav-list:focus {
+                background: #ecf2f9;
+            }
+        </style>
+    </head>
+    <body>
+       <nav>
+            <ul>
+                <li class="nav-list">첫번째 메뉴</li>
+                <li class="nav-list">두번째 메뉴(적당)</li>
+                <li class="nav-list">세번째 조금 긴 메뉴</li>
+                <li class="nav-list">네번째</li>
+                <li class="nav-list">짧음</li>
+            </ul>
+       </nav>
+   </body>
+</html>
+
+
+출처: https://archienetworks.tistory.com/entry/브라우저-해상도에-따라-ul-폭에-꽉차는-메뉴-list-만들기 [@archieNETworks]

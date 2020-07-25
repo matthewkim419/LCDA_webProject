@@ -94,42 +94,48 @@ body{
 
 /* 
 여기서부터 현문 */
-#secondpoll{
-    display:none;
-}
 
 .first{
-    border : 1px solid gray;
-    position: absolute;
+    border: 3px solid rgb(58, 0, 0);
+    position: fixed;
     width: 27%;
-    height: 35%;
-    
+    height: 74%;
+    transition: 0.5s;
+    margin-top: 5%;
 }
 
 .second{
-    border: 1px solid gray;
-    position: absolute;
+    border: 3px solid rgb(58, 0, 0); 
+    position: fixed;
     left: 31%;
     margin-left: 5%;
     width:27%;
-    height: 35%;
-    
+    height: 74%;
+    transition: 0.5s;
+    margin-top: 5%;
 }
 
 .third{
-    border: 1px solid gray;
-    position: absolute;
+    border: 3px solid rgb(58, 0, 0);
+    position: fixed;
     margin-left: 5%;
     left: 66%;
     width:27%;  
-    height: 35%;
-    
-    
+    height: 74%;
+    transition: 0.5s;
+    margin-top: 5%;
+}
+
+.first:hover, .second:hover, .third:hover{
+    background-color: rgb(58, 0, 0);
+    box-shadow : 0px 0px 4px 4px black inset;
+    border:none;
 }
 
 #review{
     text-align: center;
     vertical-align: top !important;
+    font-weight:bolder;
 
 }
 
@@ -145,34 +151,43 @@ body{
     grid-column:1;
     border: 2px solid white;
     position: relative;
-    top: 7px;
-    left: 7px;
+    top: 27px;
+    left: -61px;
 }
 .name{
-    grid-column:2;
+    grid-column: 2;
     position: relative;
-    left: 93px;
-    top: -63px;
-    
+    left: 13px;
+    top: -56px;
+    font-weight:bold;
 }
 .age{
-    grid-column:2;
+    grid-column: 2;
     position: relative;
-    left: 93px;
-    top: -63px;
+    left: 21px;
+    top: -56px;
+    font-size: 15px;
+    color:gray;
+    font-style:italic;
+    
 }
 .inst{
-    grid-column:2;
+    grid-column: 2;
     position: relative;
-    left: 93px;
-    top: -63px;
+    left: 21px;
+    top: -54px;
+    font-size: 15px;
+    color:gray;
+    font-style:italic;
+    
 }
 .text{
-    margin:0px;
+    margin: 0px;
     position: relative;
-    top: -60px;
-    font-size:14px;
-    padding:5%;
+    top: -41px;
+    font-size: 14px;
+    padding: 5%;
+    text-align:left;
 }
 
 @media(max-width:757px){

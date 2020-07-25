@@ -1,3 +1,4 @@
+
 #navbar{
     width:100%;
     height:10%;
@@ -8,55 +9,65 @@
    background-color: #000;
 }
 
-.fp-tableCell{
-
-    display: table-cell;
-    vertical-align: top !important;
-    width: 100%;
-    height: 100%;
-
-}
-
-@media screen and (max-width: 1000px) {
-    #navbar {
-        height:6%;
-    }
-  }
-
-#logo{
-    position: relative;
-}
-
-#menu{
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 40px;
+#menu {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+    font-weight: 1000;
     color: aliceblue;
     text-decoration: none;
     position: relative;    
     text-align: conter;
     margin-left : 0px;
-}
-@media screen and (max-width: 1000px) {
-    #menu {
-      font-size: 20px;
-    }
+
+    display: inline-block;
+    transition: .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    border: none;
+    table-layout:fixed;
   }
+
+  ul{
+    display: table-row;
+  }
+  li{
+    display: table-cell;
+    text-align:center;
+    padding: 5px 0;
+  }
+
+  #menu:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+#logo{
+    position: relative;
+    right: 0px;
+    top: 0px;
+    width: 0;
+    height: 0;
+}
+
+@media (max-width : 700px){
+    #navbar{
+        height: 5%;
+    }
+    #menu{
+        font-size: 20px;
+        
+}
+
 body{
     background-color: #000;
+}
 
-}
-.page_2{
-    padding-left: 520px;
-}
-.page_3{
-    padding-left: 100px;    
-}
-.page_4{
-    padding-left: 100px;
-}
-.page_5{
-    padding-left: 100px;
-}
+
+
 
 
 /* 
@@ -162,6 +173,7 @@ body{
         border: white;
     }
 }
+<<<<<<< HEAD
 .footer {
     width:100%;
     height:60px;
@@ -171,3 +183,6 @@ body{
    text-align: center;
    color: white;
  }
+=======
+}
+>>>>>>> KKS

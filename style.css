@@ -1,7 +1,7 @@
 
 #navbar{
     width:100%;
-    height:8%;
+    height:10%;
     left:0px;
     top: 0 px;  
    position: relative;
@@ -45,7 +45,7 @@
     transform: scale(1.1);
   }
 
-.logo{
+#logo{
     position: relative;
     right: 0px;
     top: 0px;
@@ -155,4 +155,5 @@ body{
     .first, .second, .third{
         border: white;
     }
+}
 }
